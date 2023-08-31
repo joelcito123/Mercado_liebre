@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+/*Header CSS*/
+header {
+    background-color: #EAC926;
+}
+.top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.top-header .logo{
+    width: 45%;
+}
+.top-header form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-header form input{
+    width: 70%;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.top-header form button{
+    position: relative;
+    right: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: white;
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px;
+}
+.nav-bar ul li{
+    padding: 5px;
+}
+
+section.burger-menu {
+    text-align: center;
+    padding: 10px;
+}
+
+section.burger-menu i {
+    width: 40px;
+    height: 40px;
+    background-color: #03264C;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*Main CSS*/
+main form ul.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.formulario li{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.formulario li input,
+.formulario li button{
+    width: 60vw;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.formulario li div div input{
+    width: 5vw;
+    height: 100%;
+}
+
+/*Footer CSS*/
+footer {
+    text-align: center;
+    margin: 10px;
+}
+
+.pie-pagina{
+    display: flex;
+    flex-direction: column;
+}
+
+.icono-footer i{
+    font-size: 2em;
+    margin-top: 10px;
+    color: #03264C;
+    transition: color 450ms;
+}
+
+.icono-footer i:hover{
+    color: gold;
+}
+
+@media (max-width: 360px){
+    /*Header CSS*/
+    .menu {
+        display: none;
+    }
+} 
+@media (min-width: 361px){
+    /*Header CSS*/
+    .top-header{
+        flex-wrap: nowrap;
+    }
+    .top-header form{
+        width: 30%;
+        justify-content: center;
+    }
+    .top-header form input{
+        height: 30px;
+    }
+    .top-header div.anuncio{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-bar ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav-bar ul li a{
+        font-size: 75%;
+    }
+    .burger-menu {
+        display: none;
+    }
+    /*Footer CSS*/
+    .pie-pagina {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .pie-pagina div.articulo{
+        width: 30%;
+        margin: 10px;
+    }
+}
+@media (min-width: 769px){
+    /*Header CSS*/
+    .top-header form input{
+        width: 90%;
+    }
+    .nav-bar ul li a{
+        font-size: 100%;
+    }
+}
